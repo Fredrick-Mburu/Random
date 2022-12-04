@@ -5,15 +5,15 @@
 
 
 import random
-class RandomGenerator:
+class MoversGenerator:
     def __init__(self, MinRange,  MaxRange, Count) -> None:
         self.MinRange = MinRange
         self.MaxRange = MaxRange
         self.Count = Count
 
-    def Populate_Random_Numbers(self):
+    def Pumping_Random_Numbers(self):
         random_nums = random.sample(range(self.MinRange, self.MaxRange), self.Count)
         print(random_nums)
-rand_nums = RandomGenerator(200,1000,9)
-rand_nums.Populate_Random_Numbers()
+rand_nums = MoversGenerator(0,1000,5)
+rand_nums.Pumping_Random_Numbers()
 
