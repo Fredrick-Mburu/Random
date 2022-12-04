@@ -5,15 +5,15 @@
 
 
 import random
-class MoversGenerator:
+class NumberTwistes:
     def __init__(self, MinRange,  MaxRange, Count) -> None:
         self.MinRange = MinRange
         self.MaxRange = MaxRange
         self.Count = Count
 
-    def Pumping_Random_Numbers(self):
+    def Number_Spinners_And_Spinners(self):
         random_nums = random.sample(range(self.MinRange, self.MaxRange), self.Count)
         print(random_nums)
-rand_nums = MoversGenerator(0,1000,5)
-rand_nums.Pumping_Random_Numbers()
+rand_nums = NumberTwistes(10000,2950000,75)
+rand_nums.Number_Spinners_And_Spinners()
 
